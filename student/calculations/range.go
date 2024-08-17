@@ -21,8 +21,8 @@ func Range(numslice []float64) (int, int) {
 
 	// adjust the range from coefficient
 	confidenceMultiplier := math.Abs(correlation)
-	adjustedLowRange := predicted - stdDev*(2.4-confidenceMultiplier) // Use 1.8 as a multiplier for flexibility
-	adjustedHighRange := predicted + stdDev*(2.4-confidenceMultiplier)
+	adjustedLowRange := predicted - stdDev*(2.5-confidenceMultiplier) // Use 1.8 as a multiplier for flexibility
+	adjustedHighRange := predicted + stdDev*(2.5-confidenceMultiplier)
 
 	lowRange := int(math.Round(adjustedLowRange))
 	highRange := int(math.Round(adjustedHighRange))
