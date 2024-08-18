@@ -88,12 +88,12 @@ To test the project, follow these steps:
 
 Contributions are welcome! To contribute:
 
-    Fork the repository.
-    Create a new branch (git checkout -b feature-branch).
-    Make your changes and commit (git commit -am 'Add new feature').
-    Push to your branch (git push origin feature-branch).
-    Create a Pull Request with details of your changes.
+  1. Fork the repository.
+  2. Create a new branch (git checkout -b feature-branch).
+  3. Make your changes and commit (git commit -am 'Add new feature').
+  4. Push to your branch (git push origin feature-branch).
+  5. Create a Pull Request with details of your changes.
 
 Author
 
-This project was built and maintaned by     [shfana](https://github.com/Wambita)
+This project was built and maintaned by   [shfana](https://github.com/Wambita)
