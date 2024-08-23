@@ -46,6 +46,34 @@ To set up **Guess It 2**, ensure you have Go installed on your system:
 
 - student/calculations/predictNextValue.go: Predicts the next value in the sequence using linear regression.
 
+-  there are also unit tests that test the various functions of the program
+
+-  to run the tests navigate to the calulations directory and run the following command
+
+```bash
+cd calculations
+go test 
+```
+
+ output
+ ```
+ PASS
+ok      guess-it-2/calculations 0.001s
+```
+- to check the test coverage run :
+
+```
+go test -cover
+```
+
+output 
+```
+PASS
+coverage: 70.7% of statements
+ok      guess-it-2/calculations 0.002s
+```
+
+
 ## Usage
 
 1.  Make the script executable:
@@ -84,7 +112,7 @@ To test the project, follow these steps:
 3. Move the student/ folder into the extracted directory.
 4. Follow the instructions in the tester's README file for running the tests.
 
-## Contributing
+## Contributions
 
 Contributions are welcome! To contribute:
 
@@ -94,6 +122,6 @@ Contributions are welcome! To contribute:
   4. Push to your branch (git push origin feature-branch).
   5. Create a Pull Request with details of your changes.
 
-Author
+## Author
 
 This project was built and maintaned by   [shfana](https://github.com/Wambita)
