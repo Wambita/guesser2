@@ -30,21 +30,21 @@ To set up **Guess It 2**, ensure you have Go installed on your system:
 
  ## Project Structure
 
-- student/main.go: The main entry point of the program.
+- **student/main.go**: The main entry point of the program.
 
-- student/readData/readdata.go: Manages reading user input from standard input.
+- **student/readData/readdata.go**: Manages reading user input from standard input.
 
-- student/calculations/mean.go: Computes the mean (average) of a slice of float64 numbers.
+- **student/calculations/mean.go**: Computes the mean (average) of a slice of float64 numbers.
 
-- student/calculations/stddev.go: Calculates the variance and standard deviation.
+- **student/calculations/stddev.go:** Calculates the variance and standard deviation.
 
-- student/calculations/linearRegression.go: Performs linear regression to find the best-fit line and its parameters.
+- **student/calculations/linearRegression.go**: Performs linear regression to find the best-fit line and its parameters.
 
-- student/calculations/pearsonsCorrelation.go: Computes the Pearson correlation coefficient.
+- **student/calculations/pearsonsCorrelation.go**: Computes the Pearson correlation coefficient.
 
-- student/calculations/range.go: Uses regression and correlation to calculate the prediction range.
+- **student/calculations/range.go**: Uses regression and correlation to calculate the prediction range.
 
-- student/calculations/predictNextValue.go: Predicts the next value in the sequence using linear regression.
+- **student/calculations/predictNextValue.go**: Predicts the next value in the sequence using linear regression.
 
 -  there are also unit tests that test the various functions of the program
 
