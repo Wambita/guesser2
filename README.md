@@ -38,10 +38,6 @@ To set up **Guess It 2**, ensure you have Go installed on your system:
 
 - **student/calculations/stddev.go:** Calculates the variance and standard deviation.
 
-- **student/calculations/linearRegression.go**: Performs linear regression to find the best-fit line and its parameters.
-
-- **student/calculations/pearsonsCorrelation.go**: Computes the Pearson correlation coefficient.
-
 - **student/calculations/range.go**: Uses regression and correlation to calculate the prediction range.
 
 - **student/calculations/predictNextValue.go**: Predicts the next value in the sequence using linear regression.
