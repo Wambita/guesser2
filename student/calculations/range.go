@@ -10,19 +10,14 @@ func Range(numslice []float64) (int, int) {
 
 	chunk := numslice[startCalc:]
 
-	// calculate pearson's correlation coefficient
-	correlation := PearsonsCorrelationCoefficient(chunk)
-
 	// predict the next value
 	predicted := PredictNextValue(chunk)
 
 	variance := Variance(chunk)
 	stdDev := Stddev(variance)
 
-	// adjust the range from coefficient
-	confidenceMultiplier := math.Abs(correlation)
-	adjustedLowRange := predicted - stdDev*(2.5-confidenceMultiplier) // Use 1.8 as a multiplier for flexibility
-	adjustedHighRange := predicted + stdDev*(2.5-confidenceMultiplier)
+	adjustedLowRange := predicted - stdDev*(2)
+	adjustedHighRange := predicted + stdDev*(2)
 
 	lowRange := int(math.Round(adjustedLowRange))
 	highRange := int(math.Round(adjustedHighRange))
