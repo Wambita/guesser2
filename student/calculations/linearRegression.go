@@ -20,17 +20,22 @@ func LinearRegression(y []float64) (m, c float64) {
 	// XYSum sum of products of deviations
 	// X2Sum sum of squared deviations
 
-	var XYSum, X2Sum float64
-
-	for i, yi := range y {
+	var stddevX, stddevY float64
+	var varianceX, varianceY float64
+	var X []float64
+	for i := range y {
 		xi := float64(i)
-		XYSum += (xi - meanX) * (yi - meanY)
-		X2Sum += (xi - meanX) * (xi - meanX)
+		X = append(X, xi)
 	}
+	varianceX = Variance(X)
+	varianceY = Variance(y)
+	stddevX = Stddev(varianceX)
+	stddevY = Stddev(varianceY)
 
 	// slope (rate at whixh y chnages for each unit of x)
-	//
-	m = XYSum / X2Sum
+	corelation := PearsonsCorrelationCoefficient(y)
+
+	m = corelation * stddevY / stddevX
 
 	// where the regression line crosses the y axis
 	// c = y - mx
