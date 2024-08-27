@@ -42,6 +42,10 @@ To set up **Guess It 2**, ensure you have Go installed on your system:
 
 - **student/calculations/predictNextValue.go**: Predicts the next value in the sequence using linear regression.
 
+- **student/calculations/pearsonsCorrelation.go**: Computes the Pearson correlation coefficient.
+
+- **student/calculations/linearRegression.go**: Performs linear regression to find the best-fit line and its parameters.
+
 -  there are also unit tests that test the various functions of the program
 
 -  to run the tests navigate to the calulations directory and run the following command
